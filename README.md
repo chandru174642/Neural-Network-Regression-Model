@@ -5,8 +5,8 @@
 To develop a neural network regression model for the given dataset.
 
 ## THEORY
-The model consists of three fully connected layers where the first layer takes one input and maps it to eight neurons, the second layer maps eight neurons to ten, and the final layer maps ten neurons to a single output. ReLU activation is applied in the hidden layers to introduce non-linearity, while the output layer remains linear to suit regression tasks. The training process uses Mean Squared Error (MSE) as the loss function, since it is commonly used for measuring errors in continuous value predictions. For optimization, the RMSProp optimizer is applied to adjust the weights efficiently and speed up convergence. During training, the model undergoes forward propagation to generate predictions, calculates the loss by comparing predictions with the target values, and applies backpropagation to update weights. The loss values are stored in a history dictionary, and after training, the model is evaluated on test data to compute test loss, which indicates how well the model generalizes. Finally, the training loss is visualized using a loss curve, which shows how the error decreases over epochs. A smooth decreasing curve indicates effective learning of the model.
 
+The model consists of three fully connected layers where the first layer takes one input and maps it to eight neurons, the second layer maps eight neurons to ten, and the final layer maps ten neurons to a single output. ReLU activation is applied in the hidden layers to introduce non-linearity, while the output layer remains linear to suit regression tasks. The training process uses Mean Squared Error (MSE) as the loss function, since it is commonly used for measuring errors in continuous value predictions. For optimization, the RMSProp optimizer is applied to adjust the weights efficiently and speed up convergence. During training, the model undergoes forward propagation to generate predictions, calculates the loss by comparing predictions with the target values, and applies backpropagation to update weights. The loss values are stored in a history dictionary, and after training, the model is evaluated on test data to compute test loss, which indicates how well the model generalizes. Finally, the training loss is visualized using a loss curve, which shows how the error decreases over epochs. A smooth decreasing curve indicates effective learning of the model.
 
 ## Neural Network Model
 
@@ -41,10 +41,14 @@ Plot the performance plot
 ### STEP 7:
 
 Evaluate the model with the testing data.
+
+### New Sample Data Prediction:
 <img width="1099" height="695" alt="Screenshot 2025-08-19 113420" src="https://github.com/user-attachments/assets/331aa43d-18d9-449e-9ec3-51607ef339bf" />
 
+
+
 ## PROGRAM
-### Name: CHANDRU.P
+### Name: CHANDRU P
 ### Register Number: 212223110007
 ```python
 import torch.nn as nn
